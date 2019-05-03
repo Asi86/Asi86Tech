@@ -1,0 +1,134 @@
+t******************************************************************************************
+——————————————————————How to enable The key to repeat when held down——————————————————————******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type “defaults write -g ApplePressAndHoldEnabled -bool false” into the window.
+******************************************************************************************
+——————————————————————How to Disable The key to repeat when held down—————————————————————******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type “defaults write -g ApplePressAndHoldEnabled -bool true” into the window.
+******************************************************************************************
+—————————————————————————————————How to show hidden files—————————————————————————————————******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type “defaults write com.apple.finder AppleShowAllFiles YES” into The window.
+******************************************************************************************
+—————————————————————————————————How to Hide hidden files—————————————————————————————————
+******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type “defaults write com.apple.finder AppleShowAllFiles NO” into The window.
+******************************************************************************************
+————————————————————————————————How to reset the password—————————————————————————————————******************************************************************************************
+1. Make Sure your Mac Is powered down.
+2. Turn On your Mac While simotaniously Holding The keys Command and “R”
+3. Release Command and “R” keys when you seen the apple With a loading bar underneath. If no loading bar appears retry steps 1-3.
+
+4. Wait for your Mac to load.
+5. Go to the bar at the top of the screen.
+6. Left-click on “Utilities”
+7. Left-click on “Terminal” 
+8. Wait 10 seconds
+9. Type “resetpassword” into the window.
+10. Select the Startup Volume(often called Macintosh HD)
+11. Select the account that you want to reset the password on
+12. Enter a password in the second box.
+13. Enter the SAME password in the third box.
+14. Enter a Password Hint.
+15. Press save and Restart to see the results.
+******************************************************************************************
+———How to transfer messages from the Messages app(AKA “iChat”) from one Mac to another———
+******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal.
+3. Press return after a “- Terminal” appears after it.
+4. Wait 10 seconds.
+5. Type in “open ~/Library/Messages”
+6. Copy everything in that folder to a USB.
+7. Do steps 1-5 on the other Mac.
+8. Copy the files on the USB used in step 6.
+9. Paste the files in the window you opened in step 5
+10. Right-Click anywhere where there isn’t an item.
+11. Left-Click on the “Get Info” option.
+12. Left-Click on the arrow pointing to the right in front of “Sharing & Permissions”
+13. Left-Click on the lock in the bottom right corner.
+14. Enter Your Password.
+15. Press the Return Key.
+16. Left-Click on any “Read Only” things in the Privilege Column.
+17. Left-Click on the “Read & Write” Option.
+18. Left-Click on the gear at the bottom of the window.
+19. Left-Click on the Option “Apply to enclosed Items…”
+20. Left-Click on the “OK” Botton.
+******************************************************************************************
+————————————————————————How to enable that “Ping” when plugged in—————————————————————————
+******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+4. Type in “defaults write com.apple.PowerChime ChimeOnAllHardware -bool true; open /System/Library/CoreServices/PowerChime.app &”
+******************************************************************************************
+————————————————————————How to Disable that “Ping” when plugged in————————————————————————******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+4. Type in “defaults write com.apple.PowerChime ChimeOnAllHardware -bool false; open /System/Library/CoreServices/PowerChime.app &”
+******************************************************************************************
+—————————————Bring Back the Shutdown Dialog When You Press the Power Button———————————————******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type in “defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool no”
+******************************************************************************************
+——————————Don't Bring Back the Shutdown Dialog When You Press the Power Button————————————******************************************************************************************
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+4. Type in “defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool yes”
+
+
+******************************************************************************************
+******************************************************************************************
+—————————————————————————————————————for macOS Sierra-————————————————————————————————————
+******************************************************************************************
+******************************************************************************************
+
+
+How to enable “open files downloaded from anywhere” in macOS Sierra
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type “sudo spctl --master-disable” into the window.
+6. Type In Your password. <<NOTE>> your password will be invisible.
+7. Hit the Enter/Return Key.
+
+
+******************************************************************************************
+******************************************************************************************
+—————————————————————————————————————For Making Usb—————————————————————————————————————
+******************************************************************************************
+******************************************************************************************
+Labelling for the Boot Menu
+1. Press the space bar and the command key.
+2. Type in terminal
+3. Press return.
+4. Wait 10 seconds.
+5. Type “sudo bless --folder <mount_path> -label <desired_label>”
+FOR EXAMPLE 
+sudo bless --folder "/Volumes/Mac OS X Lion Install ESD" -label "Lion Install"
+
+
+
