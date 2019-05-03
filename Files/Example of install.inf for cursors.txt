@@ -1,0 +1,59 @@
+[Version]
+signature="$CHICAGO$"
+
+;shows whats used/copied
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+;says where the cursor files are kept
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+;basicly dont touch this
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+
+;This Is The Import List, enter the name of each file that is being imported the extention (example: .inf or .ani) IS NEEDED
+
+[Scheme.Cur]
+"pointer filename"
+"help filename"
+"work filename"
+"busy filename"
+"cross filename"
+"text filename"
+"hand filename"
+"unavailiable filename"
+"vert filename"
+"horiz filename"
+"diagonal1 filename"
+"diagonal2 filename"
+"move filename"
+"alternate filename"
+"link filename"
+
+;This Is Where You Select Which Of The Imported Cursors Is Chosen For A Specific Action
+[Strings]
+CUR_DIR         = "Cursors\NAME IT"
+SCHEME_NAME     = "NAME IT"
+;Below you must label each file exactly as above
+pointer		= "pointer filename"
+help		= "help filename"
+work		= "work filename"
+busy		= "busy filename"
+cross		= "cross filename"
+text		= "text filename"
+hand		= "hand filename"
+unavailiable	= "unavailiable filename"
+vert		= "vert filename"
+horz		= "horiz filename"
+dgn1		= "diagonal1 filename"
+dgn2		= "diagonal2 filename"
+move		= "move filename"
+alternate	= "alternate filename"
+link		= "link filename"
+
+;so if your reading this you're probably done so save it to where the cursors you have are and rename this file "install.inf"
