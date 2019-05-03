@@ -1,26 +1,26 @@
-t******************************************************************************************
-ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑHow to enable The key to repeat when held downÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ******************************************************************************************
+******************************************************************************************
+----How to enable The key to repeat when held down----******************************************************************************************
 1. Press the space bar and the command key.
 2. Type in terminal
 3. Press return.
 4. Wait 10 seconds.
 5. Type Òdefaults write -g ApplePressAndHoldEnabled -bool falseÓ into the window.
 ******************************************************************************************
-ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑHow to Disable The key to repeat when held downÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ******************************************************************************************
+----How to Disable The key to repeat when held down----******************************************************************************************
 1. Press the space bar and the command key.
 2. Type in terminal
 3. Press return.
 4. Wait 10 seconds.
 5. Type Òdefaults write -g ApplePressAndHoldEnabled -bool trueÓ into the window.
 ******************************************************************************************
-ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑHow to show hidden filesÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ******************************************************************************************
+----How to show hidden files----******************************************************************************************
 1. Press the space bar and the command key.
 2. Type in terminal
 3. Press return.
 4. Wait 10 seconds.
 5. Type Òdefaults write com.apple.finder AppleShowAllFiles YESÓ into The window.
 ******************************************************************************************
-ÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑHow to Hide hidden filesÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ
+----Ñow to Hide hidden files----
 ******************************************************************************************
 1. Press the space bar and the command key.
 2. Type in terminal
