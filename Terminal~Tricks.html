@@ -9,6 +9,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write -g ApplePressAndHoldEnabled -bool false" into the window</li>
+      <li>Press Enter</li>
      </ol>  
   
   <h2>Disable Repeating Keys</h2>
@@ -19,6 +20,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write -g ApplePressAndHoldEnabled -bool true" into the window</li>
+      <li>Press Enter</li>
      </ol>
   
   <h2>Show Hidden Files</h2>
@@ -29,6 +31,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write com.apple.finder AppleShowAllFiles YES" into the window</li>
+      <li>Press Enter</li>
      </ol>
   
   <h2>Hide Hidden Files</h2>
@@ -39,6 +42,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write com.apple.finder AppleShowAllFiles NO" into the window</li>
+      <li>Press Enter</li>
      </ol>
 
   <h2>Enable The Ping Noise When Plugged In Via Magsafe/USBC</h2>
@@ -49,6 +53,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write com.apple.PowerChime ChimeOnAllHardware -bool true; open /System/Library/CoreServices/PowerChime.app" into the window</li>
+      <li>Press Enter</li>
      </ol>
   
   <h2>Disable The Ping Noise When Plugged In Via Magsafe/USBC</h2>
@@ -59,6 +64,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write com.apple.PowerChime ChimeOnAllHardware -bool false; open /System/Library/CoreServices/PowerChime.app" into the window</li>
+      <li>Press Enter</li>
      </ol>  
   
   <h2>Enable Shutdown Menu When Pressing Power Button</h2>
@@ -69,6 +75,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool NO" into the window</li>
+      <li>Press Enter</li>
      </ol>
     
   <h2>Disable Shutdown Menu When Pressing Power Button</h2>
@@ -79,6 +86,7 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool YES" into the window</li>
+      <li>Press Enter</li>
      </ol>
     
   <h2>How to transfer messages from the Messages app(AKA "iChat") from one Mac to another</h2>
@@ -89,8 +97,9 @@
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
       <li>Copy and Paste "open ~/Library/Messages" into the window</li>
+      <li>Press Enter</li>
       <li>Copy everything in that folder to a USB.</li>
-      <li>Do steps 1-5 on the newer Mac.</li>
+      <li>Do steps 1-6 on the newer Mac.</li>
       <li>Eject the usb from the old mac and plug it into the new mac</li>
       <li>Copy the files from the USB you put there in step 6.</li>
       <li>Paste the files in the window you opened in step 5 on the new mac</li>
@@ -128,15 +137,30 @@
        <li>sign out of icloud and restart</li>
      </ol>
   
-  <h2>Terminal Command</h2>
+  <h2>Enable opening files downloaded from unauthorized sources</h2>
      <ol>
       <li>Press the command key and the space bar.</li>
       <li>Type in "Terminal"</li>
       <li>Press return after a black box icon with a <_ is inside it.</li>
       <li>Wait 10 seconds.(or until a black window shows up)</li>
       <li>Click in the black window (this should enable you to type)</li>
-      <li>Copy and Paste "" into the window</li>
+      <li>Copy and Paste "sudo spctl --master-disable" into the window</li>
+      <li>Press Enter</li>
+      <li>Type In Your password. <<NOTE>> your password will be invisible.</li>
      </ol>
+  
+  <h2>Labeling USB Boot Drives</h2>
+     <ol>
+      <li>Press the command key and the space bar.</li>
+      <li>Type in "Terminal"</li>
+      <li>Press return after a black box icon with a <_ is inside it.</li>
+      <li>Wait 10 seconds.(or until a black window shows up)</li>
+      <li>Click in the black window (this should enable you to type)</li>
+      <li>Copy and Paste "sudo bless --folder <mount_path> -label <desired_label>" into the window</li>
+      <li>Press Enter</li>
+      <li>FOR EXAMPLE
+        <br>sudo bless --folder "/Volumes/Mac OS X Install" -label "Mojave For Oldies"</li>
+     </ol> 
 
 </body>
 </html>
