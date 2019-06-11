@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Error Page</title>
+   <meta name="title" content="Error Page">
+   <meta name="description" content="Error Page">
+   <link rel="icon" href="images/Asi.png" type="image/png" sizes="16x16">
+   <style>
+   </style
+</head>
+ <body>
+  <a href="index.html"><img src="images/Asi.png" width="168" height="95">
+ </body>
+</html>
