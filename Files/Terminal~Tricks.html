@@ -175,7 +175,22 @@
       <li>Press Enter</li>
       <li>FOR EXAMPLE
         <br>sudo bless --folder "/Volumes/Mac OS X Install" -label "Mojave For Oldies"</li>
-     </ol> 
+     </ol>
+        
+  <h2>Labeling USB Boot Drives</h2>
+     <ol>
+      <li>Press the command key and the space bar.</li>
+      <li>Type in "Terminal"</li>
+      <li>Press return after a black box icon with a <_ is inside it.</li>
+      <li>Wait 10 seconds.(or until a black window shows up)</li>
+      <li>Click in the black window (this should enable you to type)</li>
+      <li>Copy and Paste "diskutil eraseDisk Format DriveName /dev/disk#s#" into the window</li>
+      <li>Press Enter</li>
+      <li>FOR EXAMPLE
+       <br>diskutil eraseDisk JHFS+ Untitled /dev/disk2
+       <br>or
+       <br>diskutil eraseDisk JHFS+ Untitled /dev/disk2s1</li>
+     </ol>
  </div>
 </body>
 </html>
