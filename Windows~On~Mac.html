@@ -6,6 +6,15 @@
    <meta name="description" content="Asi86Tech">
    <link rel="icon" href="images/Asi.png" type="image/png" sizes="16x16">
    <style>
+      /* Font Start */
+      @font-face {
+      font-family: Open_Sans;
+      src: url(Open_Sans/OpenSans-Light.ttf);
+      }
+      * {
+      font-family: Open_Sans;
+      } 
+      /* Font End */
       /* Background Colour */
 	  body {
 	    background-color:#999999
@@ -32,10 +41,28 @@
           }
       /* SpaceyGuy */	
       /* CentreFella */
-          div.CentreFella {
-          background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+          .CentreFella {
+          text-align: center;
+          font-size: 40px;
+          -webkit-animation:ColourGuy 15s infinite alternate;
+          font-family: "San Francisco";
           }
       /* CentreFella */	
+      /* Start of ColourGuy */
+      @-webkit-keyframes ColourGuy {
+      0% {color: blue;}
+      10% {color: #8e44ad;}
+      20% {color: #1abc9c;}
+      30% {color: #d35400;}
+      40% {color: blue;}
+      50% {color: #34495e;}
+      60% {color: blue;}
+      70% {color: #2980b9;}
+      80% {color: #f1c40f;}
+      90% {color: #2980b9;}
+      100% {color: pink;}
+     }
+      /* End of ColourGuy */
       /* Start Of NavBart */
 	  .navbar {
 	    overflow: hidden;
@@ -84,7 +111,7 @@
   <div class="SpaceyGuy">   
 
      <p>
-     <h2 style="text-align: center; background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);">Windows on Mac</h2>
+     <h3 class="CentreFella">Windows on Mac</h3>
         <br>This page will go over a guide to help you install windows on ANY Mac/Macbook/Mackbook               Air/Macbook Pro/iMac
         <br>click here for Legacy versions
         <br>The first step is to go to your search bar and search "Windows 10 Download", the result you want to click on should list microsoft.com as the web address/URL
