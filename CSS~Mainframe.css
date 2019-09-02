@@ -1,0 +1,191 @@
+/* Font Start */
+      @font-face {
+      font-family: Open_Sans;
+      src: url(Open_Sans/OpenSans-Light.ttf);
+      }
+      * {
+      font-family: Open_Sans;
+      } 
+      /* Font End */
+      /* Background Colour */
+	  body {
+	    background-color:#999999
+	  }
+      /* Background Colour */	
+      /* Footer Start */
+	  .footer {
+ 	    position: fixed;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    background-color: Purple;
+	    color: white;
+	    text-align: right;
+	  }	
+      /* Footer End */
+      /* Image */
+          div.image {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            }
+      /* Image */
+      /* SpaceyGuy */
+          div.SpaceyGuy {
+            position: relative;
+            left: 20px;
+
+            font-size: 20;
+            
+          }
+      /* SpaceyGuy */
+      /* NoteBox */
+          .NoteBox {
+            position: absolute;
+            left: 10px;
+            bottom: 40px;
+            font-size: 15px;
+            
+          }
+      /* NoteBox */
+      /* CentreFella */
+          .CentreFella {
+          text-align: center;
+          font-size: 40px;
+          -webkit-animation:ColourGuy 15s infinite alternate;
+          }
+      /* CentreFella */	
+      /* Start of ColourGuy */
+      @-webkit-keyframes ColourGuy {
+      0% {color: #ff0000;}
+      1% {color: #f2000d;}
+      2% {color: #e6001a;}
+      3% {color: #d90026;}
+      4% {color: #cc0033;}
+      5% {color: #bf0040;}
+      6% {color: #b2004c;}
+      7% {color: #a60059;}
+      8% {color: #990066;}
+      9% {color: #8c0073;}
+      10% {color: #800080;}
+      11% {color: #73008c;}
+      12% {color: #660099;}
+      13% {color: #5900a6;}
+      14% {color: #4d00b2;}
+      15% {color: #4000bf;}
+      16% {color: #3300cc;}
+      17% {color: #2600d9;}
+      18% {color: #1900e6;}
+      19% {color: #0d00f2;}
+      20% {color: #0000ff;}
+      21% {color: #1f00ff;}
+      22% {color: #4200ff;}
+      23% {color: #5700ff;}
+      24% {color: #5c00ff;}
+      25% {color: #6100ff;}
+      26% {color: #6600ff;}
+      27% {color: #6e00f7;}
+      28% {color: #7500f0;}
+      29% {color: #7d00e8;}
+      30% {color: #8500e0;}
+      31% {color: #8c00d9;}
+      32% {color: #9400d1;}
+      33% {color: #9c00c9;}
+      34% {color: #a300c2;}
+      35% {color: #ab00ba;}
+      36% {color: #b200b2;}
+      37% {color: #ba00ab;}
+      38% {color: #c200a3;}
+      39% {color: #c9009c;}
+      40% {color: #d10094;}
+      41% {color: #d9008c;}
+      42% {color: #e00085;}
+      43% {color: #e8007d;}
+      44% {color: #f00075;}
+      45% {color: #f7006e;}
+      46% {color: #ff0066;}
+      47% {color: #ff056e;}
+      48% {color: #ff0a75;}
+      49% {color: #ff0f7d;}
+      50% {color: #ff1485;}
+      51% {color: #ff1a8C;}
+      52% {color: #ff1f94;}
+      53% {color: #ff249c;}
+      54% {color: #ff29a3;}
+      55% {color: #ff2eab;}
+      56% {color: #ff33b2;}
+      57% {color: #ff38ba;}
+      58% {color: #ff3dc2;}
+      59% {color: #ff42c9;}
+      60% {color: #ff47d1;}
+      61% {color: #ff4cd9;}
+      62% {color: #ff52e0;}
+      63% {color: #ff57e8;}
+      64% {color: #ff5cf0;}
+      65% {color: #ff61f7;}
+      66% {color: #ff66ff;}
+      67% {color: #ff6ef2;}
+      68% {color: #ff75e6;}
+      69% {color: #ff7dd9;}
+      70% {color: #ff85cc;}
+      71% {color: #ff8cbf;}
+      72% {color: #ff94b2;}
+      73% {color: #ff9ca6;}
+      74% {color: #ffa399;}
+      75% {color: #ffab8c;}
+      76% {color: #ffb280;}
+      77% {color: #ffba73;}
+      78% {color: #ffc266;}
+      79% {color: #ffc959;}
+      80% {color: #ffd14d;}
+      81% {color: #ffd940;}
+      82% {color: #ffe033;}
+      83% {color: #ffe826;}
+      84% {color: #fff019;}
+      85% {color: #fff70d;}
+      86% {color: #ffff00;}
+      87% {color: #f7ff0d;}
+      88% {color: #f0ff1a;}
+      89% {color: #e8ff26;}
+      90% {color: #e0ff33;}
+      91% {color: #b2ff80;}
+      92% {color: #abff8c;}
+      93% {color: #a3ff99;}
+      94% {color: #9cffa6;}
+      95% {color: #94ffb2;}
+      96% {color: #8cffbf;}
+      97% {color: #85ffcc;}
+      98% {color: #7dffd9;}
+      99% {color: #6efff2;}
+      100% {color: #66ffff;}
+     }
+      /* End of ColourGuy */
+      /* Start Of NavBart */
+	  .navbar {
+	    overflow: hidden;
+ 	    background-color: Purple;
+	  }
+	  .navbar a {
+	    float: left;
+ 	    display: block;
+        color: White;
+   	    text-align: center;
+ 	    padding: 14px 8px;
+ 	    text-decoration: none;
+ 	    font-size: 17px;
+	  }
+	  .navbar a:hover {
+	    background: #ddd;
+	    color: black;
+	  }
+	  .main {
+	    padding: 16px;
+	    margin-top: 30px;
+	    height: 1500px; /* Used in this example to enable scrolling */
+	  }
+      /* End Of NavBart */
+      /* Start Of Link Colouring*/
+	  a:visited {
+	    color: blue;
+	  }
+      /* End Of Link Colouring*/
