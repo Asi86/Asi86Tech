@@ -39,6 +39,11 @@
             
           }
       /* SpaceyGuy */
+      /* Start Of Link Colouring*/
+	  a:visited {
+	    color: blue;
+	  }
+      /* End Of Link Colouring*/
       /* NoteBox */
           .NoteBox {
             position: absolute;
