@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-   <title>Asi86Tech</title>
-   <meta name="title" content="Asi86Tech">
-   <meta name="description" content="Asi86Tech">
-   <meta property="og:image" content="https://asi86tech.com/images/Asi.png">
-   <link rel="icon" href="https://asi86tech.com/images/Asi.png" type="image/png" sizes="16x16">
-   <link rel="stylesheet" href="CSS~Mainframe.css">
-</head>
- <body>
-  <img class="image" src="images/Asi.png" width="168" height="95">
-  <h2  style="position: absolute; top: 0px; left: 25%;"class="CentreFella" >Asi86's Personal Website</h2>
-  <div class="navbar">
-     <a href="index.html" style="color:White;">&nbsp;&nbsp;Home</a>
-     <a href="Windows~On~Mac.html" style="color:White;">Windows on Mac</a>
-     <a href="MacOS~Terminal~Tricks.html" style="color:White;">Terminal Tricks</a>
-     <a href="Tools.html" style="color:White;">Tools</a>
-     <a href="Misc~Files.html" style="color:white;">Misc Files</a>
-     <a href="Info.html" style="color:White;">About This Site/Contact</a>
-     <a href="https://sites.google.com/view/asi-sushi/home" style="color:White;">Sushi Page</a>
-     <a href="http://DosDude1.com" style="color:White;">Check Me Out</a>
-  </div>
-  <div class="SpaceyGuy"> 
-     <p>
-        <br>My name is Asiana. I do alot of computer stuff such as
-        <br>thermal paste replacements on macbooks and desktops.
-        <br>
-        <br>I am able to do any macbook repair with litle to no issues as
-        <br>long as it is in the year 2007-2013. I also do thermal 
-        <br>replacements on alot of laptops
-        <br>
-        <br>My favorite accomplishment so far has been building an iPhone 5S
-        <br>from the case up using parts off iFixit, Ebay, and Amazon.
-        <br>
-        <br>On this website, you will find all the intel Mac os X Install apps
-        <br>along with some of my code and some terminal commands I've
-        <br>collected over the years.I have also created a list of free programs
-        <br>that are very helpful with IT work.
-     </p>
-  </div>
-  <div class="footer">
-     <p>©2019 Asi86. All rights reserved.&nbsp;&nbsp;&nbsp;</p>
-  </div>
-</body>
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+<div w3-include-html="https://asi86tech.com/HTML~Mainframe.html"></div>
+<script>
+includeHTML();
+</script>
+<script src="JS~Mainframe.js">
+</script>
+   
+   
+<div class="SpaceyGuy">
+    <p>
+       <br>My name is Asiana. I do alot of computer stuff such as
+       <br>thermal paste replacements on macbooks and desktops.
+       <br>
+       <br>I am able to do any macbook repair with litle to no issues as
+       <br>long as it is in the year 2007-2013. I also do thermal 
+       <br>replacements on alot of laptops
+       <br>
+       <br>My favorite accomplishment so far has been building an iPhone 5S
+       <br>from the case up using parts off iFixit, Ebay, and Amazon.
+       <br>
+       <br>On this website, you will find all the intel Mac os X Install apps
+       <br>along with some of my code and some terminal commands I've
+       <br>collected over the years.I have also created a list of free programs
+       <br>that are very helpful with IT work.
+    </p>
+ </div>
 </html>
