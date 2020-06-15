@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -31,3 +33,4 @@ function includeHTML() {
 <script>
 includeHTML();
 </script>
+</html>
