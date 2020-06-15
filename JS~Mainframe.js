@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <pre>
 <script>
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -33,4 +34,5 @@ function includeHTML() {
 <script>
 includeHTML();
 </script>
+</pre>
 </html>
