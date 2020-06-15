@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<?php
+	echo "<html>
 <head>
    <title>Asi86Tech</title>
    <meta name="title" content="Asi86Tech">
@@ -25,4 +25,5 @@
    <p>©2019 Asi86. All rights reserved.&nbsp;&nbsp;&nbsp;</p>
   </div>
  </body>
-</html>
+</html>";
+?>
