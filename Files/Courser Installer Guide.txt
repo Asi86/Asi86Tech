@@ -1,0 +1,51 @@
+[Version]
+signature="$CHICAGO$"
+;
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+;
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+;
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+;
+;
+;This Is The start of where you Edit, all the names below are the .ani or .cur pointer images you are importing.
+;make sure all your .ani file's names are listed below.
+[Scheme.Cur]
+"pointer.ani"
+"cross.cur"
+;
+;
+[Strings]
+;
+;the following line tells your computer name that the coursers imported are to be stored inside a folder called "MyCourserTheme"
+CUR_DIR         = "Cursors\MyCourserTheme"
+;
+;This line is where you tell your computer the name of the theme, you will see name while 
+;changing coursers inside "Settings/Personalisation/Themes/Mouse Courser"
+SCHEME_NAME     = "MyCourserTheme"
+;
+;This Is Where You Select Which Of The Imported Cursors (.ani or .cur) Is Chosen For A Specific Action.
+;for example, the main icon you see as your mouse is called "pointer", the file "pointer.ani" is set as your default pointer.
+pointer		= "pointeR.ani"
+help		= "help.ani"
+work		= "loading.ani"
+busy		= "busy.ani"
+cross		= "cross.ani"
+text		= "text.ani"
+hand		= "hand.cur"
+unavailiable	= "univailible.ani"
+vert		= "vert.ani"
+horz		= "horizontal.ani"
+dgn1		= "diagonal1.ani"
+dgn2		= "diagonal2.ani"
+move		= "move.cur"
+alternate	= "alternate.cur"
+link		= "link.cur"
+;
+;so if your reading this you're probably done, so the last step to complete is to 
+;save this file to where the cursors you have are, afterwords you will need to rename this file "install.inf"
