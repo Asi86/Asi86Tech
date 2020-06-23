@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Error Page</title>
+   <meta name="title" content="Recipes">
+   <meta name="description" content="Recipes">
+   <link rel="icon" href="https://asi86tech.com/images/Asi.png" type="image/png" sizes="16x16">
+   <style>
+    /* Font Start */
+     @font-face {
+     font-family: Open_Sans;
+     src: url(Open_Sans/OpenSans-Light.ttf);
+     }
+     * {
+     font-family: Open_Sans;
+     } 
+    /* Font End */
+   </style>
+</head>
+ <body>
+  <a href="/" style="text-decoration: none; color:Blue; visited:black;"><img src="https://asi86tech.com/images/Asi.png" width="168" height="95">
+  <p><font size="3">☃click the logo to go back to the main page☃︎</font></p>
+  <h2>☃︎Welcome to my Recipes page☃︎</h2>
+  <p><font size="6">Mac n Cheese Recipie
+   <br><font size="3">Pasta Ingredients:
+   <ul>
+    <li>4 Cups Water</li>
+    <li>1 Teaspoon Sea Salt</li>
+    <li>2 1/2 Cups Pasta</li>
+   </ul>
+   <font size="3">Cheese Mix Ingredients:
+   <ul>
+    <li>2 Tablespoon Butter</li>
+    <li>2 Tablespoon Flour</li>
+    <li>1 Cup Low Sodium Chicken Broth</li>
+    <br>
+    <li>1 1/2 Cup Heavy Cream</li>
+    <li>2 1/2 Cup Jack Cheese Shredded
+    <br>&nbsp&nbsp&nbsp(Alternatively use 1 1/4 Cup Shredded Jack
+    <br>&nbsp&nbsp&nbsp Along with 1 1/4 Cup Sharp Cheddar)</li>
+    <li>1 Teaspoon Ground Black Pepper</li>
+    <li>Optional: Add Breadcrumbs, Bacon Bits, or other ingredients</li>
+   </ul>
+   <font size="3">Instructions:
+   <ol>
+    <li> Pour all the Pasta ingredients into a pot, cook till pasta is squishy.</li>
+    <li> Drain Pasta And put it into an 8in x 8in Pan</li>
+    <li> Preheat oven to 350F</li>
+    <li> Mix the First 3 ingredients into a pot and whisk until completly liquid</li>
+    <li> Turn stove on High and Cook pot for 2-3 Minutes</li>
+    <li> turn The burner off and Move pot off of the hot burner</li>
+    <li> Add Cheese, Heavy Cream, And Black Pepper to the pot, stir for 10seconds</li>
+    <li> Pour Pasta into pot and stir till cheese mixed with pasta</li>
+    <li> Pour the contents of the pot into the 8in x 8in Pan and put into the oven @350F</li>
+    <li> Cook for 10min and Enjoy</li>
+   </ol>
+  </p>
+ </body>
+</html>
