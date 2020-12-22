@@ -36,23 +36,7 @@
             left: 20px;
             font-size: 20;
           }
-      /* SpaceyGuy */\
-      /* RecipeGuy */
-          .RecipeGuy {
-            display: none;
-           	position: relative;
-            left: 30px;
-            top: 210px;
-          }
-      /* RecipeGuy */
-      /* RecipeTitle */
-          .RecipeTitle {
-    	       position: relative;
-   		       text-align: center;
-    	       top: 190px;
-            height: 34px;
-          }
-      /* RecipeTitle */
+      /* SpaceyGuy */
       /* Start Of Link Colouring*/
 	         a:visited {
 	           color: blue;
