@@ -34,11 +34,25 @@
           div.SpaceyGuy {
             position: relative;
             left: 20px;
-
             font-size: 20;
-            
           }
-      /* SpaceyGuy */
+      /* SpaceyGuy */\
+      /* RecipeGuy */
+          div.RecipeGuy {
+            position: relative;
+            left: 30px;
+            top: 100px;
+          }
+      /* RecipeGuy */
+      /* RecipeTitle */
+          div.RecipeTitle {
+    	    position: relative;
+            width: 100%;
+            text-align: center;
+    	    top: 50px;
+            height: 34px;
+    }
+      /* RecipeTitle */
       /* Start Of Link Colouring*/
 	  a:visited {
 	    color: blue;
