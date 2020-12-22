@@ -38,11 +38,12 @@
           }
       /* SpaceyGuy */\
       /* RecipeGuy */
-          div.RecipeGuy {
-            position: relative;
+          .RecipeGuy {
+            display: none;
+    	    position: relative;
             left: 30px;
-            top: 100px;
-          }
+            top: 210px;
+         }
       /* RecipeGuy */
       /* RecipeTitle */
           div.RecipeTitle {
