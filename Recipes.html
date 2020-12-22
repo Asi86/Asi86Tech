@@ -6,13 +6,44 @@
   <meta name="description" content="Asiana's Recipes">
   <link rel="icon" href="https://asi86tech.com/images/Asi.png" type="image/png">
   <link rel="stylesheet" href="CSS~Mainframe.css">
+  <style>
+  	body {
+  background-color: #C718CD;
+}
+/* Delete */
+  	div.RecipeGuy {
+    	position: relative;
+        left: 30px;
+        top: 100px;
+        }
+    div.RecipeTitle {
+    	position: relative;
+        width: 100%;
+   		text-align: center;
+    	top: 50px;
+        height: 34px;
+    }
+/* Delete */
+
+/* Select Recipe option shows square pictures with recipe names below */
+
+ </style>
  </head>
  <body>
-  <a href="/"><img src="https://asi86tech.com/images/Asi.png" width="168" height="95"></a>
-  <p style="position: absolute; right: 10px; top: 0px;"><font size="3">☃click the logo to go back to the main page☃︎</font></p>
+  <a href="/"><p style="position: absolute; right: 10px; top: 0px;"><font size="3">☃click here to go back to the main page☃︎</font></p></a>
+  
   <h2 style="position: absolute; width: 100%; text-align: center; top: 90px;" class="CentreFella">☃︎Welcome to my Recipes page☃︎</h2>
+  
+  <div class="RecipeTitle">
+   <select>
+   <option value="0">Select Recipe:</option>
+   <option value="1">Mac n Cheese</option>
+   <option value="2">Pancakes</option>
+   <option value="3">Japanese Curry</option>
+   </select>
+  </div>
+  
   <div class="RecipeGuy">
-   <font size="6">Mac n Cheese
    <br><font size="5">Pasta Ingredients:<font size="3">
    <ul>
     <li>4 Cups Water</li>
@@ -50,6 +81,7 @@
     <li> Place your pan inside the oven @350F, Cook for 10min and Enjoy!!</li>
    </ol>
   </div>
+  
   <div class="RecipeGuy">
    <font size="6">Pancakes
    <br><font size="5">Dry Ingredients:<font size="3">
@@ -80,5 +112,6 @@
     <li> Cook the Pancake for the same time it took to reveal bubbles.</li>
     <li> Repeat steps 7-10 with remaining Pancake Batter and eat.</li>
    </ol>
+  </div>
  </body>
 </html>
