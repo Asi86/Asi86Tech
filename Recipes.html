@@ -8,8 +8,15 @@
   <link rel="stylesheet" href="CSS~Mainframe.css">
   <style>
   	body {
-  background-color: #C718CD;
-}
+      background-color: #C718CD;
+    }
+    a {
+    text-decoration: none;
+    color: black;
+    right: 10px;
+    position: absolute;
+    visited: black;
+    }
 /* Keep */
     .RecipeGuy {
         display: none;
@@ -24,6 +31,7 @@
         height: 34px;
     }
 /* Keep */
+
 
 /* Select Recipe option shows square pictures with recipe names below */
 
@@ -84,12 +92,16 @@
         var Blank = function() {
             document.getElementById("select").value = "Blank";
         };
+        var selectFunction = function() {
+            document.getElementById("select").value = "Option1";
+        };
     </script>
  </head>
  <body>
-  <a href="/"><p style="position: absolute; right: 10px; top: 0px; color: black; text-decoration: none;"><font size="3">☃click here to go back to the main page☃︎</font></p></a>
-  
-  <h2 style="position: absolute; width: 100%; text-align: center; top: 90px; font-size: 42px;" class="CentreFella">☃︎Welcome to my Recipes page☃︎</h2>
+ <div class="TRtxt">
+  <a href="/">☃click here to go back to the main page☃︎</a>
+ </div>
+ <h2 style="position: absolute; width: 100%; text-align: center; top: 90px; font-size: 42px;" class="CentreFella">☃︎Welcome to my Recipes page☃︎</h2>
   
   <div class="RecipeTitle">
    <select style="width: 20%; Height: 100%;">
@@ -116,8 +128,8 @@
      <img src="https://asi86tech.com/images/No-Image.png">
      <p>Pancakes</p>
     </div>
-    <div class="block">
-     <img type="button" value="CHANGE" onclick="selectFunction()" src="https://asi86tech.com/images/Japanese-Curry.jpg">
+    <div type="button" onclick="selectFunction()" class="block">
+     <img src="https://asi86tech.com/images/Japanese-Curry.jpg">
      <p>Japanese Curry</p>
     </div> 
     <div class="block">
@@ -141,13 +153,12 @@
     <div class="block">
      <img src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
-    </div> 
-    </div> 
+    </div>
    </div>  
   </div>
   
   <div class="Mac-n-Cheese RecipeGuy">
-   <br><font size="5">Pasta Ingredients:<font size="3">
+   <h3>Pasta Ingredients:</h3>
    <ul>
     <li>4 Cups Water</li>
     <li>1 Teaspoon Sea Salt</li>
@@ -161,8 +172,8 @@
     <br>
     <li>1 1/2 Cup Heavy Cream</li>
     <li>2 1/2 Cup Jack Cheese Shredded
-    <br>&nbsp&nbsp&nbsp(Alternatively use 1 1/4 Cup Shredded Jack
-    <br>&nbsp&nbsp&nbsp Along with 1 1/4 Cup Sharp Cheddar)</li>
+    <br>&nbsp;(Alternatively use 1 1/4 Cup Shredded Jack
+    <br>&nbsp;&nbsp;&nbsp; Along with 1 1/4 Cup Sharp Cheddar)</li>
     <li>1 Teaspoon Ground Black Pepper</li>
     <li>Optional: Add Breadcrumbs, Bacon Bits, or other ingredients</li>
    </ul>
