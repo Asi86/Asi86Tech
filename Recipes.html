@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb">
  <head>
   <title>Asiana's Recipes</title>
   <meta name="title" content="Asiana's Recipes">
@@ -8,52 +8,49 @@
   <link rel="stylesheet" href="CSS~Mainframe.css">
   <style>
   	body {
-      background-color: #C718CD;
+    background-color: #C718CD;
     }
     a {
     text-decoration: none;
     color: black;
     right: 10px;
     position: absolute;
-    visited: black;
     }
-/* Keep */
+    a:visited {
+    color: black;
+    }
+    h2 {
+	font-weight: normal;
+    }
     .RecipeGuy {
-        display: none;
-    	position: relative;
-        left: 30px;
-        top: 210px;
-        }
-    .RecipeTitle {
-    	position: relative;
-   		text-align: center;
-    	top: 190px;
-        height: 34px;
+    display: none;
+    position: relative;
+    left: 30px;
+    top: 210px;
     }
-/* Keep */
-
-
-/* Select Recipe option shows square pictures with recipe names below */
-
-.block {
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  font-size: 20px;
-}
-
-.container {
-  text-align: center;
-}
-
-.block img {
- width: 150px;
- height: 150px;
-}
- </style>
- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
- <script>
- $(document).ready(function(){
+    .RecipeTitle {
+    position: relative;
+   	text-align: center;
+    top: 190px;
+    height: 34px;
+    }
+    .block {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    }
+    .container {
+      text-align: center;
+    }
+    .block img {
+     width: 150px;
+    height: 150px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  $(document).ready(function(){
     $("select").change(function(){
         $(this).find("option:selected").each(function(){
             var optionValue = $(this).attr("value");
@@ -65,9 +62,9 @@
             }
         });
     }).change();
- });
- </script>
- <script type="text/javascript">
+  });
+  </script>
+  <script>
         var Mac-n-Cheese = function() {
             document.getElementById("select").value = "Mac-n-Cheese";
         };
@@ -102,7 +99,6 @@
   <a href="/">☃click here to go back to the main page☃︎</a>
  </div>
  <h2 style="position: absolute; width: 100%; text-align: center; top: 90px; font-size: 42px;" class="CentreFella">☃︎Welcome to my Recipes page☃︎</h2>
-  
   <div class="RecipeTitle">
    <select style="width: 20%; Height: 100%;">
     <option value="null">Select Recipe:</option>
@@ -116,55 +112,52 @@
     <option value="Blank">Blank</option>
    </select>
   </div>
-  
   <div class="null RecipeGuy">
    <div class="container">
     <div class="block">
-     <h3></h3>
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Mac n' Cheese" src="https://asi86tech.com/images/No-Image.png">
      <p>Mac n' Cheese</p>
     </div>
     <div class="block">
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Pancakes" src="https://asi86tech.com/images/No-Image.png">
      <p>Pancakes</p>
     </div>
-    <div type="button" onclick="selectFunction()" class="block">
-     <img src="https://asi86tech.com/images/Japanese-Curry.jpg">
+    <div class="block">
+     <img alt="Japanese Curry" src="https://asi86tech.com/images/Japanese-Curry.jpg">
      <p>Japanese Curry</p>
     </div> 
     <div class="block">
      <h3></h3>
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Crab Rangoons" src="https://asi86tech.com/images/No-Image.png">
      <p>Crab Rangoons</p>
     </div>
     <div class="block">
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Fried Tofu" src="https://asi86tech.com/images/No-Image.png">
      <p>Fried Tofu</p>
     </div> 
     <div class="block">
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Shrimp Tempura" src="https://asi86tech.com/images/No-Image.png">
      <p>Shrimp Tempura</p>
     </div> 
     <div class="block">
      <h3></h3>
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Pumpkin Juice" src="https://asi86tech.com/images/No-Image.png">
      <p>Pumpkin Juice</p>
     </div>
     <div class="block">
-     <img src="https://asi86tech.com/images/No-Image.png">
+     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div>
    </div>  
   </div>
-  
   <div class="Mac-n-Cheese RecipeGuy">
-   <h3>Pasta Ingredients:</h3>
+   <h2>Pasta Ingredients:</h2>
    <ul>
     <li>4 Cups Water</li>
     <li>1 Teaspoon Sea Salt</li>
     <li>2 1/2 Cups Pasta</li>
    </ul>
-   <font size="5">Cheese Mix Ingredients:<font size="3">
+   <h2>Cheese Mix Ingredients:</h2>
    <ul>
     <li>2 Tablespoon Butter</li>
     <li>2 Tablespoon Flour</li>
@@ -172,12 +165,12 @@
     <br>
     <li>1 1/2 Cup Heavy Cream</li>
     <li>2 1/2 Cup Jack Cheese Shredded
-    <br>&nbsp;(Alternatively use 1 1/4 Cup Shredded Jack
-    <br>&nbsp;&nbsp;&nbsp; Along with 1 1/4 Cup Sharp Cheddar)</li>
+    <br>&nbsp;&nbsp;(Alternatively use 1 1/4 Cup Shredded Jack
+    <br>&nbsp;&nbsp; Along with 1 1/4 Cup Sharp Cheddar)</li>
     <li>1 Teaspoon Ground Black Pepper</li>
     <li>Optional: Add Breadcrumbs, Bacon Bits, or other ingredients</li>
    </ul>
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> Pour all the Pasta ingredients into a pot, cook till pasta is squishy.</li>
     <li> Drain Pasta And put the pasta into an 8in x 8in Pan.</li>
@@ -195,23 +188,22 @@
     <li> Place your pan inside the oven @350F, Cook for 10min and Enjoy!!</li>
    </ol>
   </div>
-  
   <div class="Pancakes RecipeGuy">
-   <br><font size="5">Dry Ingredients:<font size="3">
+   <h2>Dry Ingredients:</h2>
    <ul>
     <li> 1 1/2 Cup All Purpose Flour</li>
     <li> 1 TableSpoon White Sugar</li>
     <li> 3 1/2 TeaSpoon Baking Powder</li>
     <li> 1 Teaspoon Sea Salt(iodised works fine though)</li>
    </ul>   
-   <font size="5">Liquid Ingredients:<font size="3">
+   <h2>Liquid Ingredients:</h2>
    <ul>
     <li> 1 1/4 cup Dairy Milk</li>
     <li> 3 TableSpoons Salted Butter</li>
     <li> 1 Egg(no shell)</li>
     <li> (optional)Chocolate chips, mints, blueberries, etc.</li>
    </ul>
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> Grab a big Bowl(has to fit a whole bag o popcorn).</li>
     <li> put in all the Dry ingredients into the big bowl.</li>
@@ -226,15 +218,14 @@
     <li> Repeat steps 7-10 with remaining Pancake Batter and eat.</li>
    </ol>
   </div>  
-  
   <div class="Japanese-Curry RecipeGuy">
-   <br><font size="5">Dashi Ingredients:<font size="3">
+   <h2>Dashi Ingredients:</h2>
    <ul>
     <li> 2L (2 Quarts) Water</li>
     <li> 30g (1 Ounce) Dried Kombu</li>
     <li> 30g (1 Ounce) Bonito Flakes</li>
    </ul>   
-   <br><font size="5">Toasted Spices:<font size="3">
+   <h2>Toasted Spices:</h2>
    <ul>
     <li> 7g (2 tablespoons) Whole Coriander</li>
     <li> 6g (1 tablespoon) Whole Cumin Seed</li>
@@ -243,21 +234,21 @@
     <li> 5g (2 teaspoons) Black Peppercorns</li>
     <li> 2g (1/2 teaspoon) Fennel Seed</li>
    </ul>   
-   <br><font size="5">Spices:<font size="3">
+   <h2>Spices:</h2>
    <ul>
     <li> 1 or 2 strips (1g) dehydrated orange peel </li>
     <li> 1 (2-inch) piece cinnamon (3g)</li>
     <li> 3 cloves</li>
     <li> 1/2 star anise pod</li>
    </ul>   
-   <br><font size="5">Fine Spices:<font size="3">
+   <h2>Fine Spices:</h2>
    <ul>
     <li> 16g (2 Tablespoons) Ground Turmeric</li>
     <li> 1 Pinch of Grated Nutmeg</li>
     <li> 1g (1/4 Teaspoon) Chilli Powder
     <br/>can go up to 2g (1/2 Teaspoon)</li>
    </ul>   
-   <font size="5">Stew Ingredients:<font size="3">
+   <h2>Stew Ingredients:</h2>
    <ul>
     <li> 1 pound (450g) boneless, skinless chicken thighs</li>
     <li> 2 tablespoons (30ml) vegetable oil, plus more as needed</li>
@@ -274,7 +265,7 @@
     <li> 1 cup frozen peas (5.5 ounces; 160g)</li>
     <li> 2 Cups Uncooked Rice(4 cups cooked)</li>
    </ul>
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> Take the spices and cook them in a dry skillet for about 5 minutes, or until they smell.</li>
     <li> in the meantime, get the orange peel and microwave for about 1 minute and 30 seconds.</li>
@@ -288,8 +279,6 @@
     <li></li>
     <li></li>
     <li></li>
-   
-
     <li> For the Curry Spice Blend: In a spice grinder, combine coriander, cumin, fenugreek, cardamom, black peppercorns, fennel, cinnamon, cloves, star anise, and orange peel (if using) and grind to a fine powder. Empty into a small bowl and combine with turmeric, chili powder, and nutmeg, then set aside.</li>
     <li> 
 For the Stew: Season chicken all over with salt and pepper. In a large Dutch oven, heat oil over medium-high heat until shimmering. Add chicken and cook, turning, until browned on both sides, about 6 minutes. Transfer chicken to a plate and set aside..</li>
@@ -303,9 +292,8 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> Serve curry with cooked rice and pickled ginger and/or rakkyo.</li>
    </ol>
   </div>
-    
   <div class="Crab-Rangoons RecipeGuy">
-   <br><font size="5">Ingredients:<font size="3">
+   <h2>Ingredients:</h2>
    <ul>
     <li> 4 (8 Ounce) Boxes Cabot Cream Cheese (Softened)</li>
     <li> 4 Tablespoons Worcestershire sauce</li>
@@ -317,7 +305,7 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <br/> OR 100 Wonton Wrappers</li>
     <li> Corn Oil For Frying</li>
    </ul>   
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> Melt Cabot Cream Cheese in a Bowl Until Very Soft.</li>
     <li> Put Worchestchire Sauce, Garlic Powder, And Onion Powder
@@ -332,9 +320,8 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> Take Crab Rangoons Out of Saucepan Until Floating or Browning edges</li>
    </ol>
   </div>  
-    
   <div class="Fried-Tofu RecipeGuy">
-   <br><font size="5">Ingredients:<font size="3">
+   <h2>Ingredients:</h2>
    <ul>
     <li> 2 Blocks of Tofu</li>
     <li> Canola Oil(for frying)</li>
@@ -344,7 +331,7 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> 1/2 Teaspoon Sea Salt</li>
     <li> 1/4 Teaspoon White Sugar</li>
    </ul>   
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> Open The Tofu Package And Drain The Water Out</li>
     <li> Leave Tofu on Paper Towel</li>
@@ -354,9 +341,8 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> Fry Tofu Until "Golden"</li>
    </ol>
   </div>  
-    
   <div class="Shrimp-Tempura RecipeGuy">
-   <br><font size="5">Ingredients 1:<font size="3">
+   <h2>Ingredients 1:</h2>
    <ul>
     <li> </li>
     <li> </li>
@@ -365,7 +351,7 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> </li>
     <li> </li>
    </ul>   
-   <font size="5">Ingredients 2:<font size="3">
+   <h2>Ingredients 2:</h2>
    <ul>
     <li> </li>
     <li> </li>
@@ -374,7 +360,7 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> </li>
     <li> </li>
    </ul>
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> </li>
     <li> </li>
@@ -386,9 +372,8 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> </li>
    </ol>
   </div>  
-    
   <div class="Pumpkin-Juice RecipeGuy">
-   <br><font size="5">Ingredients:<font size="3">
+   <h2>Ingredients:</h2>
    <ul>
     <li> 2 1/2 Cup Pumpkin Juice</li>
     <li> 6 Cup Apple Juice</li>
@@ -397,13 +382,13 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> 4 Tsp Pumpkin Pie Spice</li>
     <li> 1 Cup Sugar</li>
    </ul>   
-   <font size="5">Choose One<font size="3">
+   <h2>Choose One</h2>
    <ul>
     <li> 1 Butternut Squash(No Seeds) Snd 2 Cups Water</li>
     <li> 2 Cups Canned Pumpkin and 1/4 Cup Water</li>
     <li> (If Using Canned Pumpkin, Skips Steps 1-4)</li>
    </ul>
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> Preheat Oven To 355F or 180C</li>
     <li> Put 2 Halfs Of Butternut Squash on Oven Tray.</li>
@@ -417,9 +402,8 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> Simmer For 20-30Min Or Until Ideal Thickness</li>
    </ol>
   </div>  
-    
   <div class="Blank RecipeGuy">
-   <br><font size="5">Ingredients 1:<font size="3">
+   <h2>Ingredients 1:</h2>
    <ul>
     <li> </li>
     <li> </li>
@@ -428,7 +412,7 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> </li>
     <li> </li>
    </ul>   
-   <font size="5">Ingredients 2:<font size="3">
+   <h2>Ingredients 2:</h2>
    <ul>
     <li> </li>
     <li> </li>
@@ -437,7 +421,7 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> </li>
     <li> </li>
    </ul>
-   <font size="5">Instructions:<font size="3">
+   <h2>Instructions:</h2>
    <ol>
     <li> </li>
     <li> </li>
@@ -449,6 +433,5 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> </li>
    </ol>
   </div>  
-  
  </body>
 </html>
