@@ -59,6 +59,32 @@
     }).change();
  });
  </script>
+ <script type="text/javascript">
+        var Mac-n-Cheese = function() {
+            document.getElementById("select").value = "Mac-n-Cheese";
+        };
+        var Pancakes = function() {
+            document.getElementById("select").value = "Pancakes";
+        };
+        var Japanese-Curry = function() {
+            document.getElementById("select").value = "Japanese-Curry";
+        };
+        var Crab-Rangoons = function() {
+            document.getElementById("select").value = "Crab-Rangoons";
+        };
+        var Fried-Tofu = function() {
+            document.getElementById("select").value = "Fried-Tofu";
+        };
+        var Shrimp-Tempura = function() {
+            document.getElementById("select").value = "Shrimp-Tempura";
+        };
+        var Pumpkin-Juice = function() {
+            document.getElementById("select").value = "Pumpkin-Juice";
+        };
+        var Blank = function() {
+            document.getElementById("select").value = "Blank";
+        };
+    </script>
  </head>
  <body>
   <a href="/"><p style="position: absolute; right: 10px; top: 0px; color: black; text-decoration: none;"><font size="3">☃click here to go back to the main page☃︎</font></p></a>
@@ -67,15 +93,15 @@
   
   <div class="RecipeTitle">
    <select style="width: 20%; Height: 100%;">
-   <option value="null">Select Recipe:</option>
-   <option value="Mac-n-Cheese">Mac n' Cheese</option>
-   <option value="Pancakes">Pancakes</option>
-   <option value="Japanese-Curry">Japanese Curry</option>
-   <option value="Crab-Rangoons">Crab Rangoons</option>
-   <option value="Fried-Tofu">Fried Tofu</option>
-   <option value="Shrimp-Tempura">Shrimp Tempura</option>
-   <option value="Pumpkin-Juice">Pumpkin Juice</option>
-   <option value="Blank">Blank</option>
+    <option value="null">Select Recipe:</option>
+    <option value="Mac-n-Cheese">Mac n' Cheese</option>
+    <option value="Pancakes">Pancakes</option>
+    <option value="Japanese-Curry">Japanese Curry</option>
+    <option value="Crab-Rangoons">Crab Rangoons</option>
+    <option value="Fried-Tofu">Fried Tofu</option>
+    <option value="Shrimp-Tempura">Shrimp Tempura</option>
+    <option value="Pumpkin-Juice">Pumpkin Juice</option>
+    <option value="Blank">Blank</option>
    </select>
   </div>
   
@@ -91,7 +117,7 @@
      <p>Pancakes</p>
     </div>
     <div class="block">
-     <img src="https://asi86tech.com/images/Japanese-Curry.jpg">
+     <img type="button" value="CHANGE" onclick="selectFunction()" src="https://asi86tech.com/images/Japanese-Curry.jpg">
      <p>Japanese Curry</p>
     </div> 
     <div class="block">
@@ -114,11 +140,8 @@
     </div>
     <div class="block">
      <img src="https://asi86tech.com/images/No-Image.png">
-     <p>Untitled</p>
+     <p>Blank</p>
     </div> 
-    <div class="block">
-     <img src="https://asi86tech.com/images/No-Image.png">
-     <p>Untitled</p>
     </div> 
    </div>  
   </div>
@@ -365,8 +388,8 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
    </ul>   
    <font size="5">Choose One<font size="3">
    <ul>
-    <li> 2 Cups Canned Pumpkin and 1/4 Cup Water</li>
     <li> 1 Butternut Squash(No Seeds) Snd 2 Cups Water</li>
+    <li> 2 Cups Canned Pumpkin and 1/4 Cup Water</li>
     <li> (If Using Canned Pumpkin, Skips Steps 1-4)</li>
    </ul>
    <font size="5">Instructions:<font size="3">
