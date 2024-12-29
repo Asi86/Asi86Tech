@@ -86,6 +86,9 @@
         var Pumpkin-Juice = function() {
             document.getElementById("select").value = "Pumpkin-Juice";
         };
+        var Poke-Bowl = function() {
+            document.getElementById("select").value = "Poke-Bowl";
+        };
         var Grilled-Burger = function() {
             document.getElementById("select").value = "Grilled-Burger";
         }; 
@@ -117,14 +120,34 @@
             document.getElementById("select").value = "Option1";
         };
     </script>
+    <script language="javascript">
+			
+		function changevalue(obj)
+		{
+			Select_Value_Set("Dropdown","mainForm",obj.id);			
+		}
+
+	
+	function Select_Value_Set(SelectName,FormName,Value) {
+
+	  eval('SelectObject = document.' + FormName + '.' + SelectName + ';');
+	  for(index = 0; index < SelectObject.length; index++) {
+	   if(SelectObject[index].value == Value)
+	     SelectObject.selectedIndex = index;
+	   }
+	}
+			
+	</script>
  </head>
  <body>
  <div class="TRtxt">
   <a href="/">☃click here to go back to the main page☃︎</a>
  </div>
  <h2 style="position: absolute; width: 100%; text-align: center; top: 90px; font-size: 42px;" class="CentreFella">☃︎Welcome to my Recipes page☃︎</h2>
-  <div id="select" class="RecipeTitle">
-   <select style="width: 20%; Height: 100%;">
+ 
+  <div style="position: Centre;" id="select" class="RecipeTitle">
+  <form name="mainForm">
+   <select name="Dropdown">
     <option value="null">Select Recipe:</option>
     <option value="Mac-n-Cheese">Mac n' Cheese</option>
     <option value="Pancakes">Pancakes</option>
@@ -134,7 +157,8 @@
     <option value="Shrimp-Tempura">Shrimp Tempura</option>
     <option value="Pumpkin-Juice">Pumpkin Juice</option>
     <option value="Fried-Rice">Fried Rice</option>
-    <option value="Grilled-Burgers">Grilled Burgers</option> 
+    <option value="Grilled-Burgers">Grilled Burgers</option>
+    <option value="Poke-Bowl">Poke Bowl</option>
     <option value="Egg-Salad">Egg Salad</option> 
     <option value="Milk-Bread">Milk Bread</option>  
     <option value="Blank">Blank</option>
@@ -144,85 +168,86 @@
     <option value="Blank">Blank</option> 
     <option value="Blank">Blank</option>
    </select>
+   </form>
   </div>
   <div class="null RecipeGuy">
    <div class="container">
     <div class="block">
-     <img alt="Mac n' Cheese" src="https://asi86tech.com/images/Mac~n~Cheese.jpg">
+     <img id="Mac-n-Cheese" onclick="changevalue(this);" alt="Mac n' Cheese" src="https://asi86tech.com/images/Mac~n~Cheese.jpg">
      <p>Mac n' Cheese</p>
     </div>
     <div class="block">
-     <img alt="Pancakes" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Pancakes" onclick="changevalue(this);" alt="Pancakes" onclick="changevalue(this);" src="https://asi86tech.com/images/No-Image.png">
      <p>Pancakes</p>
     </div>
     <div class="block">
-     <img alt="Japanese Curry" src="https://asi86tech.com/images/Japanese-Curry.jpg">
+     <img id="Japanese-Curry" onclick="changevalue(this);" alt="Japanese Curry" src="https://asi86tech.com/images/Japanese-Curry.jpg">
      <p>Japanese Curry</p>
     </div> 
     <div class="block">
      <h3></h3>
-     <img alt="Crab Rangoons" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Crab-Rangoons" onclick="changevalue(this);" alt="Crab Rangoons" src="https://asi86tech.com/images/No-Image.png">
      <p>Crab Rangoons</p>
     </div>
     <div class="block">
-     <img alt="Fried Tofu" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Fried-Tofu" onclick="changevalue(this);" alt="Fried Tofu" src="https://asi86tech.com/images/No-Image.png">
      <p>Fried Tofu</p>
     </div> 
     <div class="block">
-     <img alt="Shrimp Tempura" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Shrimp-Tempura" onclick="changevalue(this);" alt="Shrimp Tempura" src="https://asi86tech.com/images/No-Image.png">
      <p>Shrimp Tempura</p>
     </div> 
     <div class="block">
-     <img alt="Pumpkin Juice" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Pumpkin-Juice" onclick="changevalue(this);" alt="Pumpkin Juice" src="https://asi86tech.com/images/No-Image.png">
      <p>Pumpkin Juice</p>
     </div>
     <div class="block">
      <h3></h3>
-     <img alt="Fried Rice" src="https://asi86tech.com/images/Fried-Rice.jpg">
+     <img id="Fried-Rice" onclick="changevalue(this);" alt="Fried Rice" src="https://asi86tech.com/images/Fried-Rice.jpg">
      <p>Fried Rice</p>
     </div>
     <div class="block">
-     <img alt="Poke Bowl" src="https://asi86tech.com/images/Poke~Bowl.jpg">
+     <img id="Poke-Bowl" onclick="changevalue(this);" alt="Poke Bowl" src="https://asi86tech.com/images/Poke~Bowl.jpg">
      <p>Poke Bowl</p>
     </div>
     <div class="block">
-     <img alt="Grilled Burgers" src="https://asi86tech.com/images/Grilled~Burgers.jpeg">
+     <img id="Grilled-Burgers" onclick="changevalue(this);" alt="Grilled Burgers" src="https://asi86tech.com/images/Grilled~Burgers.jpeg">
      <p>Grilled Burgers</p>
     </div> 
     <div class="block">
-     <img alt="Egg Salad" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Egg-Salad" onclick="changevalue(this);" alt="Egg Salad" src="https://asi86tech.com/images/No-Image.png">
      <p>Egg Salad</p>
     </div>
     <div class="block">
      <h3></h3>
-     <img alt="Milk Bread" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Milk-Bread" onclick="changevalue(this);" alt="Milk Bread" src="https://asi86tech.com/images/No-Image.png">
      <p>Milk Bread</p>
     </div> 
     <div class="block">
-     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Blank" onclick="changevalue(this);" alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div>
     <div class="block">
      <h3></h3>
-     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Blank" onclick="changevalue(this);" alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div> 
     <div class="block">
-     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Blank" onclick="changevalue(this);" alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div>
     <div class="block">
      <h3></h3>
-     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Blank" onclick="changevalue(this);" alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div> 
     <div class="block">
-     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Blank" onclick="changevalue(this);" alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div>
     <div class="block">
      <h3></h3>
-     <img alt="Blank" src="https://asi86tech.com/images/No-Image.png">
+     <img id="Blank" onclick="changevalue(this);" alt="Blank" src="https://asi86tech.com/images/No-Image.png">
      <p>Blank</p>
     </div>
    </div>  
@@ -506,6 +531,37 @@ Scrape roux into stew pot, stir well, and simmer until broth has thickened. Seas
     <li> Add Sesame Oil And 2 tbsp Of Soy Sauce.</li>
     <li> Mix Everything Until Rice Is Same Colour.</li>
     <li> Keep Adding Soy Sauce Until Desired Taste.</li>
+   </ol>
+  </div>  
+  <div class="Poke-Bowl RecipeGuy">
+   <h2>Ingredients:</h2>
+   <ul>
+    <li> Fresh Tuna</li>
+    <li> Avacado</li>
+    <li> Cooked Rice</li>
+    <li> Spring Lettuce Mix</li>
+    <li> Shredded Seaweed</li>
+    <li> </li>
+   </ul>   
+   <h2>Ingredients 2:</h2>
+   <ul>
+    <li> Spicy Mayo</li>
+    <li> Eel Sauce/teriyaki sauce</li>
+    <li> Mirin,Soy sauce, sesame oil, </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+   </ul>
+   <h2>Instructions:</h2>
+   <ol>
+    <li> Prepare Rice and set aside</li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+    <li> </li>
    </ol>
   </div>  
   <div class="Grilled-Burgers RecipeGuy">
